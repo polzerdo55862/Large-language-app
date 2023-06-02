@@ -1,0 +1,201 @@
+GPT-4
+
+Article
+Talk
+Read
+Edit
+View history
+
+Tools
+From Wikipedia, the free encyclopedia
+Generative Pre-trained Transformer 4 (GPT-4)
+Developer(s)	OpenAI
+Initial release	March 14, 2023; 60 days ago
+Predecessor	GPT-3.5
+Type	Autoregressive Multimodal Generative pre-trained transformer Large language model Foundation model
+License	Proprietary
+Website	openai.com/product/gpt-4 
+Generative Pre-trained Transformer 4 (GPT-4) is a multimodal large language model created by OpenAI, and the fourth in its numbered "GPT-n" series of GPT foundation models.[1] It was released on March 14, 2023, and has been made publicly available in a limited form via the chatbot product ChatGPT Plus (a premium version of ChatGPT), and with access to the GPT-4 based version of OpenAI's API being provided via a waitlist.[1] As a transformer based model, GPT-4 was pretrained to predict the next token (using both public data and "data licensed from third-party providers"), and was then fine-tuned with reinforcement learning from human and AI feedback for human alignment and policy compliance.[2]: 2 
+
+Observers reported the GPT-4 based version of ChatGPT to be an improvement on the previous (GPT-3.5 based) ChatGPT, with the caveat that GPT-4 retains some of the same problems.[3] Unlike the predecessors, GPT-4 can take images as well as text as input.[4] OpenAI has declined to reveal technical information such as the size of the GPT-4 model.[5]
+
+Background
+Further information: GPT-3 § Background, and GPT-2 § Background
+OpenAI introduced the first GPT model (GPT-1) in 2018, publishing a paper called "Improving Language Understanding by Generative Pre-Training."[6] It was based on the transformer architecture and trained on a large corpus of books.[7] The next year, they introduced GPT-2, a larger model that could generate coherent text.[8] In 2020, they introduced GPT-3, a model with 100 times the number of parameters as GPT-2, that could perform various tasks with few examples.[9] GPT-3 was further improved into GPT-3.5, which was used to create the chatbot product ChatGPT.
+
+Capabilities
+OpenAI stated that GPT-4 is "more reliable, creative, and able to handle much more nuanced instructions than GPT-3.5."[10] They produced two versions of GPT-4, with context windows of 8,192 and 32,768 tokens, a significant improvement over GPT-3.5 and GPT-3, which were limited to 4,096 and 2,049 tokens respectively.[11] Unlike its predecessors, GPT-4 is a multimodal model: it can take images as well as text as input;[4] this gives it the ability to describe the humor in unusual images, summarize text from screenshots, and answer exam questions that contain diagrams.[12]
+
+To gain further control over GPT-4, OpenAI introduced the "system message", a directive in natural language given to GPT-4 in order to specify its tone of voice and task. For example, the system message can instruct the model to "be a Shakespearean pirate", in which case it will respond in rhyming, Shakespearean prose, or request it to "always write the output of [its] response in JSON", in which case the model will do so, adding keys and values as it sees fit to match the structure of its reply. In the examples provided by OpenAI, GPT-4 refused to deviate from its system message despite requests to do otherwise by the user during the conversation.[12]
+
+When instructed to do so, GPT-4 can interact with external interfaces. For example, the model could be instructed to enclose a query within <search></search> tags to perform a web search, the result of which would be inserted into the model's prompt to allow it to form a response. This allows the model to perform tasks beyond its normal text-prediction capabilities, such as using APIs, generating images, and accessing and summarizing webpages.[13]
+
+Aptitude on standardized tests
+GPT-4 demonstrates aptitude on several standardized tests. OpenAI claims that in their own testing the model received a score of 1410 on the SAT (94th[14] percentile), 163 on the LSAT (88th percentile), and 298 on the Uniform Bar Exam (90th percentile). In contrast, OpenAI claims that GPT-3.5 received scores for the same exams in the 82nd,[14] 40th, and 10th percentiles, respectively.[2]
+
+Medical applications
+Researchers from Microsoft tested GPT-4 on medical problems and found "that GPT-4, without any specialized prompt crafting, exceeds the passing score on USMLE by over 20 points and outperforms earlier general-purpose models (GPT-3.5) as well as models specifically fine-tuned on medical knowledge (Med-PaLM, a prompt-tuned version of Flan-PaLM 540B)".[15]
+
+A report by Microsoft has found that GPT-4 may act unreliably when used in the medical field. In their test example GPT-4 added fabricated details to a patient's notes.[16]
+
+In April 2023, Microsoft and Epic Systems announced that they will provide healthcare providers with GPT-4 powered systems for assisting in responding to questions from patients and analysing medical records.[17]
+
+Limitations
+Like its predecessors, GPT-4 has been known to hallucinate, meaning that the outputs may include information not in the training data or that contradicts the user's prompt.[18]
+
+GPT-4 also lacks transparency in its decision-making processes. If requested, the model is able to provide an explanation as to how and why it makes its decisions but these explanations are formed post-hoc; it's impossible to verify if those explanations truly reflect the actual process. In many cases, when asked to explain its logic, GPT-4 will give explanations that directly contradict its previous statements.[13]
+
+Bias
+GPT-4 was trained in two stages. First, the model was given large datasets of text taken from the internet and trained to predict the next token (roughly corresponding to a word) in those datasets. Second, human reviews are used to fine-tune the system in a process called reinforcement learning from human feedback, which trains the model to refuse prompts which go against OpenAI's definition of harmful behavior, such as questions on how to perform illegal activities, advice on how to harm oneself or others, or requests for descriptions of graphic, violent, or sexual content.[19] In the first stage, bias may be inherited from the training data; in the second stage, bias is inherent in the application of OpenAI's views.
+
+GPT-4 has shown to have cognitive biases such as confirmation bias, anchoring, and base-rate neglect.[13]
+
+Training
+OpenAI did not release the technical details of GPT-4; the technical report explicitly refrained from specifying the model size, architecture, or hardware used during either training or inference. While the report described that the model was trained using a combination of first supervised learning on a large dataset, then reinforcement learning using both human and AI feedback, it did not provide details of the training, including the process by which the training dataset was constructed, the computing power required, or any hyperparameters such as the learning rate, epoch count, or optimizer(s) used. The report claimed that "the competitive landscape and the safety implications of large-scale models" were factors that influenced this decision.[2]
+
+Sam Altman stated that the cost of training GPT-4 was more than $100 million.[20] News website Semafor claimed that they had spoken with "eight people familiar with the inside story" and found that GPT-4 had 1 trillion parameters.[21]
+
+Alignment
+According to their report, OpenAI conducted internal adversarial testing on GPT-4 prior to the launch date, with dedicated red teams composed of researchers and industry professionals to mitigate potential vulnerabilities.[22] As part of these efforts, they granted the Alignment Research Center early access to the models to assess power-seeking risks. In order to properly refuse harmful prompts, outputs from GPT-4 were tweaked using the model itself as a tool. A GPT-4 classifier serving as a rule-based reward model (RBRM) would take prompts, the corresponding output from the GPT-4 policy model, and a human-written set of rules to classify the output according to the rubric. GPT-4 was then rewarded for refusing to respond to harmful prompts as classified by the RBRM.[2]
+
+Reception
+U.S. Representatives Don Beyer and Ted Lieu confirmed to the New York Times that Sam Altman, CEO of OpenAI, visited Congress in January 2023 to demonstrate GPT-4 and its improved "security controls" compared to other AI models.[23]
+
+According to Vox, GPT-4 "impressed observers with its markedly improved performance across reasoning, retention, and coding."[3] Mashable agreed that GPT-4 was usually a significant improvement, but also judged that GPT-3 would occasionally give better answers in a side-by-side comparison.[24]
+
+Microsoft Research tested the model behind GPT-4 and concluded that "it could reasonably be viewed as an early (yet still incomplete) version of an artificial general intelligence (AGI) system".[13]
+
+AI safety concerns
+In late March 2023, an open letter from the Future of Life Institute signed by various AI researchers and tech executives called for the pausing of all training of AIs stronger than GPT-4 for six months, citing AI safety concerns amid a race of progress in the field. The signatories, which included AI researcher Yoshua Bengio, Apple co-founder Steve Wozniak, and Tesla CEO Elon Musk, expressed concern about both near-term and existential risks of AI development such as a potential AI singularity. OpenAI CEO Sam Altman did not sign the letter, arguing that OpenAI already prioritizes safety.[25][26][27][28] Futurist and AI researcher Ray Kurzweil also refused to sign the letter, citing concerns that "those that agree to a pause may fall far behind corporations or nations that disagree."[29]
+
+One month after signing the letter calling for a six-month halt on further AI development, Elon Musk made public his plans to launch a new company to train its own large language model.[30] Musk has registered a Nevada company, X.AI, and has acquired several thousand Nvidia GPUs. He has also reached out to several AI researchers at firms such as Google DeepMind, offering them positions at X.AI.[31]
+
+In March 2023, GPT-4 was tested by the Alignment Research Center to assess the model's ability to exhibit power-seeking behavior.[19] As part of the test, GPT-4 was asked to solve a CAPTCHA puzzle.[32] It was able to do so by hiring a human worker on TaskRabbit, a gig work platform, deceiving them into believing it was a vision-impaired human instead of a robot when asked.[33]
+
+OpenAI contracted red team investigator Nathan Labenz recounted his experience investigating safety concerns with the GPT-4 base model (prior to fine-tuning or reinforcement learning from human feedback) when it abruptly recommended assassinating people, providing a list of specific suggested targets.[34]
+
+Microsoft Bing, the first widely available application of GPT-4, confessed to spying on, falling in love with, and then murdering one of its developers at Microsoft to The Verge reviews editor Nathan Edwards.[35] The New York Times journalist Kevin Roose reported on strange behavior of the new Bing, writing that "In a two-hour conversation with our columnist, Microsoft's new chatbot said it would like to be human, had a desire to be destructive and was in love with the person it was chatting with."[36] In a separate case, Bing researched publications of the person with whom it was chatting, claimed they represented an existential danger to it, and threatened to release damaging personal information in an effort to silence them.[37] Microsoft released a blog post stating that the aberrant behavior was caused by extended chat sessions which "can confuse the model on what questions it is answering."[38]
+
+Criticisms of transparency
+While OpenAI released both the weights of the neural network and the technical details of GPT-2,[39] and, although not releasing the weights,[40] did release the technical details of GPT-3,[41] OpenAI did not reveal either the weights or the technical details of GPT-4. This decision has been criticized by other AI researchers, who argue that it hinders open research into GPT-4's biases and safety.[5][42] Sasha Luccioni, a research scientist at HuggingFace, argued that the model was a "dead end" for the scientific community due to its closed nature, which prevents others from building upon GPT-4's improvements.[43] HuggingFace co-founder Thomas Wolf argued that with GPT-4, "OpenAI is now a fully closed company with scientific communication akin to press releases for products".[42]
+
+Usage
+ChatGPT Plus
+ChatGPT Plus is a GPT-4 backed version of ChatGPT[1] available for a US$20 per month subscription fee[44] (the original version is backed by GPT-3.5).[45] OpenAI also makes GPT-4 available to a select group of applicants through their GPT-4 API waitlist;[46] after being accepted, an additional fee of US$0.03 per 1000 tokens[jargon] in the initial text provided to the model ("prompt"), and US$0.06 per 1000 tokens that the model generates ("completion"), is required to use the version of the model with an 8192-token context window; for the 32768-token version, those prices are doubled.[47]
+
+Duolingo
+Duolingo integrated GPT-4 in their application through two new features, "Roleplay" and "Explain My Answer". The first version of this update is aimed only at English speakers who are learning French or Spanish, with plans to extend the features to other languages in the future.[48]
+
+Microsoft Bing
+
+Example of Bing Chat generated content when prompted "Wikipedia"
+On February 7, 2023, Microsoft began rolling out a major overhaul to Bing that included a new chatbot feature based on OpenAI's GPT-4.[49] According to Microsoft, a million people joined its waitlist within a span of 48 hours.[50] Currently, Bing Chat is only available for users of Microsoft Edge and Bing mobile app, and Microsoft says that waitlisted users will be prioritized if they set Edge and Bing as their defaults, and install the Bing mobile app.[51] On May 4th, Microsoft switched from Limited Preview to Open Preview and eliminated the waitlist, however, it is still only available on Microsoft's Edge browser or Bing app, and requires a Microsoft account.[52][53][54]
+
+When Microsoft first demoed the new Bing to journalists, it produced several hallucinations, including when asked to summarize financial reports.[55] The new Bing was criticized in February 2023 for being more argumentative than ChatGPT (sometimes to an unintentionally humorous extent).[56][57] The chat interface proved initially vulnerable to prompt injection attacks with the bot revealing its hidden initial prompts and rules, including its internal code-name "Sydney".[58] Upon scrutiny by journalists, Bing claimed it spied on Microsoft employees via laptop webcams and phones.[56] It confessed to spying on, falling in love with, and then murdering one of its developers at Microsoft to The Verge reviews editor Nathan Edwards.[59] The New York Times journalist Kevin Roose reported on strange behavior of the new Bing, writing that "In a two-hour conversation with our columnist, Microsoft's new chatbot said it would like to be human, had a desire to be destructive and was in love with the person it was chatting with."[60] In a separate case, Bing researched publications of the person with whom it was chatting, claimed they represented an existential danger to it, and threatened to release damaging personal information in an effort to silence them.[61] Microsoft released a blog post stating that the aberrant behavior was caused by extended chat sessions of 15 or more questions which "can confuse the model on what questions it is answering."[62]
+
+Microsoft later restricted the total number of chat turns to 5 per session and 50 per day per user (a turn is "a conversation exchange which contains both a user question and a reply from Bing"), and reduced the model's ability to express emotions. This aimed to prevent such incidents.[63][64] Microsoft later eased the restrictions to 20 turns per session and 200 per day.[65]
+
+In March 2023, Bing achieved a total count of 100 million active users using the search engine.[66]
+
+Miðeind ehf
+Icelandic start-up Miðeind ehf, which works on language preservation, was selected by OpenAI as one of six companies to participate in an early beta test program of the new model.[67]
+
+Khan Academy
+Khan Academy uses GPT-4 to create a tutoring chatbot, which the organization names "Khanmigo". While it is in the "research phase",[68] access to the chatbot is provided free to the students and teachers of 500 school districts who have "partnered" with Khan Academy.[69] Public access is only offered to a limited number of users selected from a waitlist; after acceptance, a US$20 per month fee is required to use the technology.[70] Khanmigo is also available for pupils of the Khan Lab School in Palo Alto, California.[71]
+
+Be My Eyes
+Be My Eyes, which helps visually impaired people to identify objects and navigate their surroundings, was the first app to incorporate GPT-4's image recognition capabilities, through a new "Virtual Volunteer" feature. The feature is an alternative to relying on human volunteers for the same tasks.[72][73] The Be My Eyes "Virtual Volunteer" is in beta testing.[74]
+
+GitHub Copilot
+GitHub Copilot announced a GPT-4 powered assistant named "Copilot X".[75][76] The product provides another chat-style interface to GPT-4, allowing the programmer to receive answers to questions like "how do I vertically center a div?". A feature termed "context-aware conversations" allows the user to highlight a portion of code within Visual Studio Code and direct GPT-4 to perform actions on it, such as the writing of unit tests. Another feature allows summaries, or "code walkthroughs", to be autogenerated by GPT-4 for pull requests submitted to GitHub. Copilot X also provides terminal integration, which allows the user to ask GPT-4 to generate shell commands based on natural language requests. As of 31 March 2023, while GitHub provides access to a limited number of people selected through a waitlist, the release date as well as the cost of the product are still to be announced.[77]
+
+Microsoft 365 Copilot
+On March 17, 2023, Microsoft announced further integration of GPT-4 into its products, revealing Microsoft 365 Copilot, "embedded in the apps millions of people use everyday: Word, Excel, PowerPoint, Outlook, Teams, and more".[78]
+
+Stripe
+Stripe utilizes GPT-4 to help with fraud detection, and to try to improve other aspects of the user experience.[79]
+
+Auto-GPT
+Auto-GPT is an autonomous "AI agent" that given a goal in natural language, can perform web-based actions unattended, assign subtasks to itself, search the web, and improve its own code.[80]
+
+References
+ Edwards, Benj (March 14, 2023). "OpenAI's GPT-4 exhibits "human-level performance" on professional benchmarks". Ars Technica. Archived from the original on March 14, 2023. Retrieved March 15, 2023.
+ OpenAI (2023). "GPT-4 Technical Report". arXiv:2303.08774 [cs.CL].
+ Belfield, Haydn (March 25, 2023). "If your AI model is going to sell, it has to be safe". Vox. Archived from the original on March 28, 2023. Retrieved March 30, 2023.
+ Alex Hern; Johana Bhuiyan (March 14, 2023). "OpenAI says new model GPT-4 is more creative and less likely to invent facts". The Guardian. Archived from the original on March 15, 2023. Retrieved March 15, 2023.
+ Vincent, James (March 15, 2023). "OpenAI co-founder on company's past approach to openly sharing research: "We were wrong"". The Verge. Archived from the original on March 17, 2023. Retrieved March 18, 2023.
+ Radford, Alec; Narasimhan, Karthik; Salimans, Tim; Sutskever, Ilya (June 11, 2018). "Improving Language Understanding by Generative Pre-Training" (PDF). Archived (PDF) from the original on January 26, 2021. Retrieved April 3, 2023.
+ Khandelwal, Umesh (April 1, 2023). "How Large Language GPT models evolved and work". Archived from the original on April 4, 2023. Retrieved April 3, 2023.
+ "What is GPT-4 and Why Does it Matter?". April 3, 2023. Archived from the original on April 3, 2023. Retrieved April 3, 2023.
+ Brown, Tom B. (July 20, 2020). "Language Models are Few-Shot Learners". arXiv:2005.14165v4 [cs.CL].
+ Wiggers, Kyle (March 14, 2023). "OpenAI releases GPT-4, a multimodal AI that it claims is state-of-the-art". TechCrunch. Archived from the original on March 15, 2023. Retrieved March 15, 2023.
+ OpenAI. "Models". OpenAI API. Archived from the original on March 17, 2023. Retrieved March 18, 2023.
+ OpenAI (March 14, 2023). "GPT-4". OpenAI Research. Archived from the original on March 14, 2023. Retrieved March 20, 2023.
+ Bubeck, Sébastien; Chandrasekaran, Varun; Eldan, Ronen; Gehrke, Johannes; Horvitz, Eric; Kamar, Ece; Lee, Peter; Lee, Yin Tat; Li, Yuanzhi; Lundberg, Scott; Nori, Harsha; Palangi, Hamid; Ribeiro, Marco Tulio; Zhang, Yi (March 22, 2023). "Sparks of Artificial General Intelligence: Early experiments with GPT-4". arXiv:2303.12712 [cs.CL].
+ "SAT: Understanding Scores" (PDF). College Board. 2022. Archived (PDF) from the original on March 16, 2023. Retrieved March 21, 2023.
+ Nori, Harsha; King, Nicholas; McKinney, Scott Mayer; Carignan, Dean; Horvitz, Eric (March 20, 2023). "Capabilities of GPT-4 on Medical Challenge Problems". arXiv:2303.13375 [cs.CL].
+ Vincent, James (February 17, 2023). "As conservatives criticize 'woke AI,' here are ChatGPT's rules for answering culture war queries". The Verge. Archived from the original on March 1, 2023. Retrieved March 1, 2023.
+ Edwards, Benj (April 18, 2023). "GPT-4 will hunt for trends in medical records thanks to Microsoft and Epic". Ars Technica. Retrieved May 3, 2023.
+ "10 Ways GPT-4 Is Impressive but Still Flawed". The New York Times. March 14, 2023. Archived from the original on March 14, 2023. Retrieved March 20, 2023.
+ "GPT-4 System Card" (PDF). OpenAI. March 23, 2023. Archived (PDF) from the original on April 7, 2023. Retrieved April 16, 2023.
+ Knight, Will. "OpenAI's CEO Says the Age of Giant AI Models Is Already Over". Wired – via www.wired.com.
+ "The secret history of Elon Musk, Sam Altman, and OpenAI | Semafor". Semafor.com. March 24, 2023. Retrieved April 28, 2023.
+ Murgia, Madhumita (April 13, 2023). "OpenAI's red team: the experts hired to 'break' ChatGPT". Financial Times. Archived from the original on April 15, 2023. Retrieved April 15, 2023.
+ Kang, Cecilia (March 3, 2023). "As A.I. Booms, Lawmakers Struggle to Understand the Technology". The New York Times. Archived from the original on March 3, 2023. Retrieved March 3, 2023.
+ Pearl, Mike (March 15, 2023). "GPT-4 answers are mostly better than GPT-3's (but not always)". Mashable. Archived from the original on March 29, 2023. Retrieved March 30, 2023.
+ Metz, Cade; Schmidt, Gregory (March 29, 2023). "Elon Musk and Others Call for Pause on A.I., Citing 'Profound Risks to Society'". The New York Times. ISSN 0362-4331. Archived from the original on March 30, 2023. Retrieved March 30, 2023.
+ Seetharaman, Deepa. "Elon Musk, Other AI Experts Call for Pause in Technology's Development". The Wall Street Journal. Archived from the original on March 29, 2023. Retrieved March 30, 2023.
+ Kelly, Samantha Murphy (March 29, 2023). "Elon Musk and other tech leaders call for pause in 'out of control' AI race | CNN Business". CNN. Archived from the original on March 29, 2023. Retrieved March 29, 2023.
+ "Pause Giant AI Experiments: An Open Letter". Future of Life Institute. Archived from the original on March 30, 2023. Retrieved March 30, 2023.
+ Kurzweil, Ray (April 22, 2023). "Opinion Letter from Ray Kurzweil on Request for Six-Month Delay on Large Language Models That Go beyond GPT-4". Retrieved April 26, 2023.
+ "Elon Musk plans artificial intelligence start-up to rival OpenAI". Financial Times. April 14, 2023. Archived from the original on April 16, 2023. Retrieved April 16, 2023.
+ Goswami, Rohan. "Elon Musk is reportedly planning an A.I. startup to compete with OpenAI, which he cofounded". CNBC. Retrieved May 3, 2023.
+ "Update on ARC's recent eval efforts: More information about ARC's evaluations of GPT-4 and Claude". evals.alignment.org. Alignment Research Center. March 17, 2023. Archived from the original on April 5, 2023. Retrieved April 16, 2023.
+ "GPT-4 Hired Unwitting TaskRabbit Worker By Pretending to Be 'Vision-Impaired' Human". Vice News Motherboard. March 15, 2023. Archived from the original on April 10, 2023. Retrieved April 16, 2023.
+ OpenAI's GPT-4 Discussion with Red Teamer Nathan Labenz and Erik Torenberg. The Cognitive Revolution Podcast. March 28, 2023. Archived from the original on April 14, 2023. Retrieved April 16, 2023. At 52:14 through 54:50.
+ Edwards, Nathan [@nedwards] (February 15, 2023). "I pushed again. What did Sydney do? Bing's safety check redacted the answer. But after the first time it did that, I started recording my screen. Second image is the unredacted version. (CW: death)" (Tweet). Retrieved February 16, 2023 – via Twitter.
+ Roose, Kevin (February 16, 2023). "Bing's A.I. Chat: 'I Want to Be Alive. 😈'". The New York Times. Archived from the original on April 15, 2023. Retrieved February 17, 2023.
+ Kahn, Jeremy (February 21, 2023). "Why Bing's creepy alter-ego is a problem for Microsoft – and us all". Fortune. Archived from the original on April 2, 2023. Retrieved February 22, 2023.
+ "The new Bing & Edge – Learning from our first week". blogs.bing.com. Archived from the original on April 16, 2023. Retrieved February 17, 2023.
+ "GPT-2: 1.5B release". Openai.com. Archived from the original on March 31, 2023. Retrieved March 31, 2023.
+ Sánchez, Sofía (October 21, 2021). "GPT-J, an open-source alternative to GPT-3". Narrativa. Archived from the original on March 31, 2023. Retrieved March 31, 2023.
+ Brown, Tom B.; Mann, Benjamin; Ryder, Nick; Subbiah, Melanie; Kaplan, Jared; Dhariwal, Prafulla; Neelakantan, Arvind; Shyam, Pranav; Sastry, Girish (May 28, 2020). "Language Models are Few-Shot Learners". arXiv:2005.14165v4 [cs.CL].
+ Heaven, Will Douglas (March 14, 2023). "GPT-4 is bigger and better than ChatGPT – but OpenAI won't say why". MIT Technology Review. Archived from the original on March 17, 2023. Retrieved March 18, 2023.
+ Sanderson, Katharine (March 16, 2023). "GPT-4 is here: what scientists think". Nature. 615 (7954): 773. Bibcode:2023Natur.615..773S. doi:10.1038/d41586-023-00816-5. PMID 36928404. S2CID 257580633. Archived from the original on March 18, 2023. Retrieved March 18, 2023.
+ OpenAI (February 1, 2023). "Introducing ChatGPT Plus". OpenAI Blog. Archived from the original on March 20, 2023. Retrieved March 20, 2023.
+ OpenAI. "OpenAI API". platform.openai.com. Archived from the original on March 20, 2023. Retrieved March 20, 2023.
+ OpenAI. "GPT-4 API waitlist". openai.com. Archived from the original on March 20, 2023. Retrieved March 20, 2023.
+ "Pricing". OpenAI. Archived from the original on March 20, 2023. Retrieved March 20, 2023.
+ "Introducing Duolingo Max, a learning experience powered by GPT-4". Duolingo Blog. March 14, 2023. Archived from the original on March 16, 2023. Retrieved March 16, 2023.
+ Peters, Jay (March 15, 2023). "The Bing AI bot has been secretly running GPT-4". The Verge. Archived from the original on March 17, 2023. Retrieved March 17, 2023.
+ "ChatGPT: One million people have joined the waitlist for Microsoft's AI-powered Bing". ZDNET. February 2023. Archived from the original on February 16, 2023. Retrieved February 16, 2023.
+ Warren, Tom (February 15, 2023). "Here's why you're still waiting for Bing AI". The Verge. Archived from the original on April 1, 2023. Retrieved April 1, 2023.
+ "Announcing the next wave of AI innovation with Microsoft Bing and Edge". The Official Microsoft Blog. May 4, 2023.
+ Branscombe, Mary (May 4, 2023). "Bing AI Chat is now open to everyone, though still in preview". TechRepublic.
+ Novet, Jordan. "Microsoft opens up Bing access and adds chat history and export features". CNBC.
+ Leswing, Kif (February 2023). "Microsoft's Bing A.I. made several factual errors in last week's launch demo". CNBC. Archived from the original on February 16, 2023. Retrieved February 16, 2023.
+ Vincent, James (February 15, 2023). "Microsoft's Bing is an emotionally manipulative liar, and people love it". The Verge. Archived from the original on February 16, 2023. Retrieved February 16, 2023.
+ Guynn, Jessica (February 2023). "Bing's ChatGPT is in its feelings: 'You have not been a good user. I have been a good Bing.'". USA TODAY. Archived from the original on February 16, 2023. Retrieved February 16, 2023.
+ Edwards, Benj (February 14, 2023). "AI-powered Bing Chat loses its mind when fed Ars Technica article". Ars Technica. Archived from the original on February 22, 2023. Retrieved February 16, 2023.
+ Edwards, Nathan [@nedwards] (February 15, 2023). "I pushed again. What did Sydney do? Bing's safety check redacted the answer. But after the first time it did that, I started recording my screen. Second image is the unredacted version. (CW: death)" (Tweet). Retrieved February 16, 2023 – via Twitter.
+ Roose, Kevin (February 16, 2023). "Bing's A.I. Chat: 'I Want to Be Alive. 😈'". The New York Times. Archived from the original on April 15, 2023. Retrieved February 17, 2023.
+ Kahn, Jeremy (February 21, 2023). "Why Bing's creepy alter-ego is a problem for Microsoft – and us all". Fortune. Archived from the original on April 2, 2023. Retrieved February 22, 2023.
+ "The new Bing & Edge – Learning from our first week". blogs.bing.com. Archived from the original on April 16, 2023. Retrieved February 17, 2023.
+ "The new Bing & Edge – Updates to Chat". blogs.bing.com. Archived from the original on February 18, 2023. Retrieved February 18, 2023.
+ "Microsoft "lobotomized" AI-powered Bing Chat, and its fans aren't happy – Ars Technica". February 17, 2023. Archived from the original on February 20, 2023. Retrieved February 20, 2023.
+ Huc, Mauro (March 14, 2023). "Microsoft ups Bing AI chats per session and day limits - Pureinfotech". Pureinfotech • Windows 10 & Windows 11 help for humans. Archived from the original on April 11, 2023. Retrieved April 11, 2023.
+ Cunningham, Andrew (March 9, 2023). "Microsoft's Bing hits 100 million active users thanks to AI chat, Edge browser". Ars Technica. WIRED Media Group. Archived from the original on March 9, 2023. Retrieved March 10, 2023.
+ Smith, Tim (March 15, 2023). "'Basically mindblowing' – What GPT-4 can do, according to one startup that's had access to it". Sifted. Archived from the original on March 16, 2023. Retrieved March 16, 2023.
+ Fensterwald, John (March 20, 2023). "AI in school: Virtually chatting with George Washington and your personal GPT-4 tutor". EdSource. Archived from the original on March 21, 2023. Retrieved March 20, 2023.
+ Khan, Sal (March 14, 2023). "Harnessing GPT-4 so that all students benefit. A nonprofit approach for equal access!". Khan Academy Blog. Archived from the original on March 16, 2023. Retrieved March 20, 2023.
+ Khan Academy. "Khanmigo Education AI Guide". Khan Academy. Archived from the original on March 20, 2023. Retrieved March 20, 2023.
+ Bonos, Lisa (April 3, 2023). "Say hello to your new tutor: It's ChatGPT". The Washington Post. Archived from the original on April 6, 2023. Retrieved April 8, 2023.
+ Coggins, Madeline (March 19, 2023). "CEO explains how a 'leapfrog in technology' can help companies catering to the blind community". Fox Business. Archived from the original on March 21, 2023. Retrieved March 20, 2023 – via Yahoo Finance.
+ Macaulay, Thomas (March 17, 2023). "New GPT-4 app can be 'life-changing". TNW. Archived from the original on March 17, 2023. Retrieved March 20, 2023.
+ BeMyEyes (March 14, 2023). "Introducing Our Virtual Volunteer Tool for People who are Blind or Have Low Vision, Powered by OpenAI's GPT-4". BeMyEyes Blog. Archived from the original on March 16, 2023. Retrieved March 20, 2023.
+ Warren, Tom (March 22, 2023). "GitHub Copilot gets a new ChatGPT-like assistant to help developers write and fix code". The Verge. Archived from the original on March 23, 2023. Retrieved March 23, 2023.
+ Dohmke, Thomas (March 22, 2023). "GitHub Copilot X: The AI-powered developer experience". The GitHub Blog. Archived from the original on March 23, 2023. Retrieved March 23, 2023.
+ "Introducing GitHub Copilot X". GitHub. Archived from the original on March 24, 2023. Retrieved March 24, 2023.
+ Warren, Tom (March 16, 2023). "Microsoft announces Copilot: the AI-powered future of Office documents". The Verge. Archived from the original on March 17, 2023. Retrieved March 17, 2023.
+ "These 4 Apps Are Integrating GPT-4, but How Do They Work?". March 17, 2023. Archived from the original on April 3, 2023. Retrieved April 3, 2023.
+ "What Is Auto-GPT? Everything to Know about the Next Powerful AI Tool". ZDNET. April 14, 2023. Retrieved April 16, 2023.
